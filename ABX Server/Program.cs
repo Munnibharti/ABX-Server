@@ -40,7 +40,7 @@ class Program
                 packets = HandleMissingSequences(packets, server, port);
 
                 // Write packets to JSON file
-                File.WriteAllText("C:\\Users\\umabhart\\source\\repos\\MVC_Project\\ABX Server\\output.json", JsonConvert.SerializeObject(packets, Formatting.Indented));
+                File.WriteAllText("C:\\output.json", JsonConvert.SerializeObject(packets, Formatting.Indented));
                 Console.WriteLine("Data saved to output.json");
             }
         }
